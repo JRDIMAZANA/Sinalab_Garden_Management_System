@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #90ee90;
+  color: #000000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+header {
+  display: table;
+  width: 96%;
+  margin: 5px auto 20px;
+  border: 1px solid #000000;
+  background-color: #add8e6;
+}
+
+header > p,
+header > h1 {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 10px 14px;
+}
+
+header > p {
+  font-size: 0.95em;
+  font-weight: bold;
+}
+
+header > h1 {
+  text-align: right;
+  font-size: 1.5em;
+}
+
+nav {
+  display: table;
+  width: 96%;
+  margin: 5px auto 20px;
+  border: 1px solid #000000;
+  background-color: #add8e6;
+}
+
+nav > div {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 8px 14px;
+}
+
+nav > div:last-child {
+  text-align: right;
+}
+
+nav input {
+  height: 30px;
+  width: 45%;
+  padding: 0 6px;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  font-family: inherit;
+  font-size: 0.9em;
+}
+
+nav button {
+  height: 30px;
+  width: 60px;
+  margin-left: 6px;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  font-family: inherit;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: #f0f8ff;
+}
+
+a.clickable {
+  cursor: pointer;
+}
+
+svg {
+  height: 30px;
+  width: 30px;
+}
+
+/* ---------- Meals section ---------- */
+section {
+  width: 96%;
+  margin: 0 auto;
+}
+
+section > h1 {
+  margin-bottom: 10px;
+  font-size: 1.6em;
+}
+
+.menu-items {
+  overflow: hidden;
+  padding: 10px 6px;
+  border: 1px solid #000000;
+  background-color: #ffb6c1;
+}
+
+.menu-items > article {
+  float: left;
+  width: 30%;
+  min-width: 200px;
+  margin: 0 1% 12px;
+  border: 2px solid #000000;
+  background-color: #d3d3d3;
+  cursor: pointer;
+}
+
+.card-body {
+  display: block;
+  margin: 6px;
+  padding: 10px;
+  border: 2px solid #000000;
+  background-color: #d3d3d3;
+}
+
+.card-body img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.card-body h3 {
+  margin-top: 8px;
+  font-size: 1.05em;
+}
+
+.card-body p {
+  margin-top: 4px;
+  font-size: 0.9em;
+}
+
+article > button {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 10px auto;
+  border: 2px solid #000000;
+  background-color: #d3d3d3;
+  background-image: url("/food.jpg");
+  font-family: inherit;
+  font-size: 0.85em;
+  cursor: pointer;
+}
+
+a.tappable-card {
+  display: block;
+  color: #000000;
+  text-decoration: none;
+}
+
+a.tappable-card:hover {
+  background-color: #ffffff;
+  text-decoration: underline;
+}
+
+.tappable-card {
+  cursor: pointer;
+}
+
+.menu-status {
+  padding: 12px;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+}
+
+.menu-status--error {
+  background-color: #ffb6c1;
+}
+
+.cart-count {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.card-category {
+  margin-top: 4px;
+  font-size: 0.9em;
+}
+
+.card-price {
+  margin-top: 6px;
+  font-weight: bold;
+}
+
+.card-hint {
+  margin-top: 4px;
+  font-size: 0.85em;
+}
+
+/* Immediate visual feedback when an item is tapped */
+.card--added {
+  border-color: #008000;
+  background-color: #ffffff;
+}
+
+.card--added .card-body {
+  background-color: #e6ffe6;
+}
+
+.card--added .card-hint {
+  font-weight: bold;
+  color: #008000;
+}
