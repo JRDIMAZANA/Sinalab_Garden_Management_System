@@ -1,13 +1,16 @@
-import "./style.css";
 import OrderingSystem from "./components/orderingSystem.jsx";
+import QueuingPage from "./pages/QueuingPage.jsx"
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
-  <BrowserRouter>
-    <Routes>
-      <Route path="/cashier" element={<OrderingSystem />} />
-    </Routes>
-  </BrowserRouter>;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/cashier" element={<OrderingSystem />} />
+        <Route path="/queue" element={<QueuingPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
