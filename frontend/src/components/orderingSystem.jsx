@@ -1,17 +1,6 @@
 import { useEffect, useState } from "react";
 import { fetchMenu } from "../utils/api.js";
 
-function normalizeItem(row, index) {
-  return {
-    id: row.item_id ?? row.id ?? row.menu_id ?? index,
-    product:
-      row.item_product ?? row.product ?? row.product_name ?? "Unnamed item",
-    category: row.category ?? row.item_category ?? row.category_name ?? "",
-    price: row.price ?? row.item_price ?? 0,
-    image: row.image ?? row.image_url ?? row.item_image ?? "/food.jpg",
-  };
-}
-
 function imageUrl(image) {
   if (!image) return "/food.jpg";
   if (/^https?:\/\//.test(image) || image.charAt(0) === "/") return image;
